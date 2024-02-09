@@ -1,35 +1,40 @@
-body {
-    margin: 0; 
-    font-family: 
-    Helvetica; }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
-header {
-    text-align: center; }
+.full-width-image {
+    width: 100%;
+    height: auto; /* Adjust based on the content, you can also set a specific height */
+    display: block;
+}
 
-section {
-    background: #FAFAFA; 
-    padding-top: 60px; }
+/* Example of setting a specific height, adjust as per your "two rows" definition */
+@media (min-width: 992px) { /* For larger devices */
+    .full-width-image {
+        height: 500px; /* Adjust this value to match your desired "two rows" height */
+        object-fit: cover; /* This will cover the area without distorting the aspect ratio */
+    }
+}
 
-div.header {
-    padding: 15px;}
+navbar {
+    background-color: white;
+}
 
-div.header h2{
-    margin: 0; 
-    font-size: 20px; 
-    color: black; 
-    display: inline-block;}
+.nav-link {
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
 
-.box .header .date {
-    float: right; 
-    margin: 0;}
+.nav-link:hover {
+    color: white;
+    background-color: black;
+}
 
-.box {
-    background: white; width: 600px; 
-	margin: auto; margin-bottom: 60px; 
-	margin-top: 60px; border: 1px solid #EDEEEE;}
-
-img {
-    width: 100%;}
-
-div.description { 
-    padding: 15px; color: black;}
+.main {
+    background-color: bisque;
+}
