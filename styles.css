@@ -38,3 +38,8 @@ navbar {
 .main {
     background-color: bisque;
 }
+
+.custom-border {
+    border: 50px solid black; /* You can change the '10px' to any size you want */
+  }
+  
